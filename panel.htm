@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Staff Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Staff Panel</h2>
+
+  <input type="email" id="newEmail" placeholder="New staff email">
+  <input type="password" id="newPassword" placeholder="New staff password">
+
+  <select id="rank">
+    <option>Ownership</option>
+    <option>Management</option>
+    <option>Administrators</option>
+    <option>Moderators</option>
+    <option>Trial Staff</option>
+  </select>
+
+  <button onclick="addStaff()">Add Staff</button>
+  <button onclick="logout()">Logout</button>
+
+  <p id="status"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
