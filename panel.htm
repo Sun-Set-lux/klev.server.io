@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Staff Panel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="card">
-  <h2>Staff Panel</h2>
+<div class="panel-container">
+  <div class="panel-card">
+    <h1>Staff Panel</h1>
+    <p class="subtitle">Add New Staff</p>
 
-  <input type="email" id="newEmail" placeholder="New staff email">
-  <input type="password" id="newPassword" placeholder="New staff password">
+    <input type="email" id="newEmail" placeholder="New staff email">
+    <input type="password" id="newPassword" placeholder="New staff password">
+    <select id="rank">
+      <option>Ownership</option>
+      <option>Management</option>
+      <option>Administrators</option>
+      <option>Moderators</option>
+      <option>Trial Staff</option>
+    </select>
 
-  <select id="rank">
-    <option>Ownership</option>
-    <option>Management</option>
-    <option>Administrators</option>
-    <option>Moderators</option>
-    <option>Trial Staff</option>
-  </select>
+    <button onclick="addStaff()">Add Staff</button>
+    <button class="logout" onclick="logout()">Logout</button>
 
-  <button onclick="addStaff()">Add Staff</button>
-  <button onclick="logout()">Logout</button>
-
-  <p id="status"></p>
+    <p id="status" class="message"></p>
+  </div>
 </div>
 
 <script src="script.js"></script>
